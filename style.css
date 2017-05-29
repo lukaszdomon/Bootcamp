@@ -1,0 +1,427 @@
+
+Skip to content
+Features
+Business
+Explore
+Marketplace
+Pricing
+This repository
+Sign in or Sign up
+
+2
+0
+
+    0
+
+karotella/ewa-swiatczynska-kodilla
+Code
+Issues 0
+Pull requests 0
+Projects 0
+ewa-swiatczynska-kodilla/style.css
+6c92266 8 days ago
+@karotella karotella dodanie pliku index.html oraz style.css
+398 lines (398 sloc) 6.9 KB
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+.row:before, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+}
+header {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+header img {
+	padding-top: 50px;
+}
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: url(https://source.unsplash.com/vaPoJZB9Mzg/1200x675) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.slogan {
+	color: #fff;
+	max-width: 550px;
+	padding-top: 25vh;
+}
+.slogan h1 {
+	font-size: 60px;
+	margin-bottom: 35px;
+}
+.slogan h2 {
+	font-size: 60px;
+	line-height: 72px;
+	margin-bottom: 35px;
+}
+.slogan p, .company-description p, .company-details p, .profits p, footer p, ul {
+	font-size: 13px;
+	line-height: 24px;
+}
+.company-description, .gallery, .company-details {
+	margin: 100px 0;
+}
+.hero>.container {
+	position: relative;
+}
+.hero img {
+	width: 50%;
+	max-width: 500px;
+	position: absolute;
+	bottom: -120px;
+	right: 10vw;
+}
+.company-description .col-6, .company-details [class*="col-"], .profits [class*="col-"], .pricing .col-6 {
+	padding: 0 30px;
+}
+.company-description h2, .company-details h2, .profits h2 {
+	font-size: 35px;
+	color: #222626;
+	padding: 0 0 30px 30px;
+}
+.company-description p, .company-details p {
+	color: #959595;
+	padding-bottom: 35px;
+}
+.gallery .row {
+	display: flex;
+}
+.gallery .row > div {
+	flex: 1;
+}
+.box {
+	padding: 70px 50px;
+	color: #fff;
+	height: 100%;
+}
+.box h3 {
+	font-size: 30px;
+	padding-bottom: 25px;
+}
+.box p {
+	font-size: 13px;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+.box p:last-of-type {
+	font-size: 14px;
+	padding-bottom: 0;
+}
+.box p:last-of-type:after {
+	font-family: FontAwesome;
+   	content: "\f178";
+   	padding-left: 30px;
+}
+.box .fa {
+	float: right;
+}
+.box-1 {
+	background-color: #f5989d;
+}
+.box-2 {
+	background-color: #615f7d;
+}
+.box-3 {
+	background: url('https://source.unsplash.com/iyrJnPlkP68/1914x1216') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.box-4 {
+	background: url('https://source.unsplash.com/3N5ccOE3wGg/1472x982') no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 118px;
+}
+.box-5 {
+	background-color: #82ca9c;
+}
+.company-details h2, .profits h2 {
+	padding-bottom: 70px;
+}
+.company-details .text-box h4, .profits .text-box h4 {
+	font-size: 13px;
+	padding-bottom: 30px;
+	color: #67676d;
+}
+.hero-bottom {
+	width: 100%;
+	height: 100vh;
+	background: url(https://source.unsplash.com/EvKBHBGgaUo/1837x1227) no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.hero-bottom .slogan p:last-of-type {
+	font-size: 14px;
+	padding-top: 25px;
+}
+.hero-bottom .slogan p:last-of-type:after {
+	font-family: FontAwesome;
+   	content: "\f178";
+   	padding-left: 30px;
+}
+.profits {
+	background-color: #82ca9c;
+	padding: 125px 0;
+}
+.profits h2 {
+	color: #fff;
+}
+.profits .text-box h4, p {
+	color: #fff;
+}
+.profits .text-box p:last-of-type {
+	padding-top: 25px;
+}
+.pricing {
+	background-color: #f6f7fa;
+	padding: 125px 0;
+}
+.plan {
+	background-color: #fff;
+	padding: 50px;
+}
+.plan h4 {
+	font-size: 30px;
+	color: #2e3b4e;
+	padding-bottom: 40px;
+}
+.plan p {
+	font-size: 14px;
+	line-height: 25px;
+	color: #8297a7;
+	margin-bottom: 30px;
+}
+.plan p:first-of-type {
+	color: #fff;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #e1e1e1;
+	border-radius: 5px;
+	padding: 8px 20px;
+	display: inline-block;
+}
+.popular p:first-of-type {
+	background-color: #bd8cbf;
+}
+.plan button {
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	background-color: #82ca9c;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 50px;
+	display: block;
+	margin-bottom: 20px;
+}
+.plan .fa {
+	color: #c5c5c5;
+	font-size: 24px;
+	padding-right: 15px;
+}
+footer {
+	background-color: #192431;
+	padding: 125px 0;
+}
+footer .col-6:first-of-type {
+	padding-right: 130px;
+}
+footer p {
+	color: #fff;
+}
+footer ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+footer .col-6 p:first-child {
+	padding-bottom: 30px;
+}
+footer .col-6 p:nth-child(2) {
+	padding-bottom: 70px;
+}
+footer .col-6:last-of-type p:last-of-type {
+	font-size: 12px;
+	color: #57697f;
+	padding-top: 15px;
+}
+footer .col-4 {
+	padding-right: 30px;
+}
+footer .col-6:last-of-type {
+	position: relative;
+}
+footer input {
+	width: 100%;
+	height: 60px;
+	font-size: 25px;
+	color: #192431;
+	display: block;
+}
+footer button {
+	background-color: #82ca9c;
+	border: none;
+	color: #fff;
+	height: 60px;
+	padding: 0 20px;
+	position: absolute;
+	top: 54px;
+	right: 0;
+}
+footer .col-4:last-of-type {
+	padding-right: 0;
+}
+@media(max-width: 991px) {
+	.slogan {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.company-description img {
+		display: none;
+	}
+	.company-description h2~p {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.company-description h2, .company-details h2 {
+		text-align: center;
+	}
+	.col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .box-4 {
+    	padding-bottom: 50px;
+    }
+    .profits .text-box {
+		padding-bottom: 50px;
+	}
+	.plan {
+		margin-bottom: 20px;
+	}
+	footer .col-6:first-of-type {
+		padding-right: 0;
+	}
+	footer .col-4 {
+		padding-right: 0;
+	}
+	footer .col-s-12 {
+		text-align: center;
+	}
+}
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
+
